@@ -1,0 +1,64 @@
+Voir la version de GIT installée
+--------------------------------
+git -v
+git --version
+
+Première utilisation
+--------------------
+git config --global user.name "prénom nom"
+git config --global user.email "email@email.com"
+
+pour verifier : git config -l  (L minuscule)
+:q pour quitter
+
+Pour modifier/corriger
+git config --global --replace-all user.name "nouvelle version"
+----------------------------------------------------------------
+
+
+Pour un nouveau projet :
+- Créer un repository sur github
+        on obtient une adresse : https://github.com/.../projetgit.git
+
+Pour initialiser le projet git (repository local)
+    git init
+
+Pour ignorer des fichiers/dossiers de la synchronisation
+- créer un fichier .gitignore et inscrire le nom des fichiers
+
+Associer un repository local au repository distant
+    git remote add origin https://github.com/.../projetgit.git
+    git remote -v pour vérifier
+
+Ajouter les fichiers au prochain paquet (commit)
+    git add --all
+Créer le paquet à envoyer
+    git commit -m "Premiere version"
+Envoyer sur le repository distant
+    git push -u origin master
+
+----------------------------------------------------------------
+
+Si la mise à jour ne contient pas de nouveau fichier :
+git commit -a -m "Ajout du titre"
+git push
+
+Si la mise à jour contient un ou plusieurs nouveaux fichiers
+git add --all
+git commit -m "Ajout de la feuille css"
+git push
+----------------------------------------------------------------
+
+Travailler avec un projet existant :
+dans un dossier vide
+git clone https://github.com/.../projetgit.git .
+(. signifie que l'on clone le projet dans le dossier courant)
+
+S'il y a des dependances npm:
+npm install 
+
+Récuperer les modifications de github
+git pull
+(git pull origin master)
+----------------------------------------------------------------
+
