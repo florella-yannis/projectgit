@@ -33,7 +33,7 @@ Associer un repository local au repository distant
 Ajouter les fichiers au prochain paquet (commit)
     git add --all
 Créer le paquet à envoyer
-    git commit -m "Premiere version"
+    
 Envoyer sur le repository distant
     git push -u origin master
 
@@ -45,7 +45,7 @@ git push
 
 Si la mise à jour contient un ou plusieurs nouveaux fichiers
 git add --all
-git commit -m "Ajout de la feuille css"
+git commit -m "Ajout de lgit commit -m "Premiere version"a feuille css"
 git push
 ----------------------------------------------------------------
 
